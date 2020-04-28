@@ -8,12 +8,16 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <script
       src="https://kit.fontawesome.com/f0a1bce32a.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -74,7 +78,8 @@
         <a href="/login">Sign In / Sign Up</a>
       </div>
     </nav>
-    <article class="container mt-3">
+
+<!-- <div class="container alert-container">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning">
@@ -84,11 +89,16 @@
           </div>
         </div>
       </div>
-      <!-- Callout -->
+    </div> -->
+
+    <!-- Callout -->
+    <div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
+            <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+            <hr class="block-divider block-divider--orange">
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
               month.
@@ -97,7 +107,7 @@
               <strong><mark>First one is free!</mark></strong>
             </p>
             <button
-              class="btn btn-success btn-lg"
+              class="btn btn-lg btn--cta btn--red"
               data-toggle="modal"
               data-target="#signUpModal"
             >
@@ -112,10 +122,12 @@
           </section>
         </div>
       </div>
-      <!-- /.callout -->
-      <hr />
+    </div>
+    <!-- /.callout -->
+
 
       <!-- Quotes -->
+    <div class="quotes-container">
       <section class="quotes">
         <div class="row">
           <div class="col-12 my-5">
@@ -157,7 +169,7 @@
               <div class="media-body">
                 <blockquote class="blockquote">
                   <p>I haven't been sober for months!</p>
-                  <p>- Jane Doe</p>
+                  <p>- John Doe</p>
                 </blockquote>
               </div>
             </div>
@@ -165,9 +177,10 @@
         </div>
       </section>
       <!-- /.quotes -->
-      <hr />
+    </div>
 
       <!-- Features -->
+    <div class="features-container">
       <section class="features">
         <div class="row">
           <div class="col-12 my-5">
@@ -221,8 +234,10 @@
         </div>
       </section>
       <!-- /.features -->
+    </div>
 
       <!--Monthly Favourites-->
+    <div class="mFavourites-container">
       <section>
         <table class="table">
           <thead>
@@ -256,7 +271,7 @@
         </table>
       </section>
       <!--/.monthly favourites-->
-    </article>
+    </div>
 
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
       <div class="modal-dialog" role="document">
@@ -309,7 +324,7 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
